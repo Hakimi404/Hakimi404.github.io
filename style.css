@@ -1,0 +1,50 @@
+/* General Layout */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #000; /* black background */
+  color: #fff;      /* white text */
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background: #111;
+  color: #ff6600; /* orange highlight */
+  padding: 20px;
+  text-align: center;
+}
+
+nav button {
+  margin: 5px;
+  padding: 8px 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  background: #ff6600;
+  color: #fff;
+  font-weight: bold;
+}
+
+nav button:hover {
+  background: #cc5200;
+}
+
+/* Sections */
+section {
+  padding: 20px;
+  border-bottom: 1px solid #333;
+}
+
+h2 {
+  color: #ff6600;
+}
+
+/* Footer */
+footer {
+  background: #111;
+  text-align: center;
+  padding: 10px;
+  color: #ff6600;
+}
