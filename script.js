@@ -23,7 +23,7 @@ Outside of my academic pursuits, I enjoy staying updated on the latest developme
     experienceText: "Currently working on IT spare parts app, Power BI dashboards for IT monitoring, automation with Power Automate (ServiceNow → Power BI), networking lab projects (IPv4/IPv6), and process documentation templates.",
     educationTitle: "Education",
     educationText: "Bachelor of Science in Technische Informatik, HAW Hamburg",
-    contactText: "📧 alhakimi.abdullah123@gmail.com | 🔗 LinkedIn: Abdullah Al-Hakimi"
+    contactText: `📧 <a href='mailto:alhakimi.abdullah123@gmail.com'>alhakimi.abdullah123@gmail.com</a> | 🔗 <a href='https://www.linkedin.com/in/abdullah-al-hakimi-848347259/' target='_blank'>LinkedIn</a>`
   },
   de: {
     aboutTitle: "Über mich",
@@ -49,7 +49,7 @@ Abseits des Studiums informiere ich mich über aktuelle technologische Entwicklu
     experienceText: "Zurzeit arbeite ich an einer IT-Ersatzteil-App, Power-BI-Dashboards für IT-Monitoring, Automatisierungen mit Power Automate (ServiceNow → Power BI), Netzwerklabor-Projekten (IPv4/IPv6) und Prozessdokumentations-Templates.",
     educationTitle: "Ausbildung",
     educationText: "Bachelorstudium Technische Informatik, HAW Hamburg",
-    contactText: "📧 alhakimi.abdullah123@gmail.com | 🔗 LinkedIn: Abdullah Al-Hakimi"
+    contactText: `📧 <a href='mailto:alhakimi.abdullah123@gmail.com'>alhakimi.abdullah123@gmail.com</a> | 🔗 <a href='https://www.linkedin.com/in/abdullah-al-hakimi-848347259/' target='_blank'>LinkedIn</a>`
   }
 };
 
@@ -71,8 +71,32 @@ function setLanguage(lang) {
   document.getElementById('experienceText').innerText = t.experienceText;
   document.getElementById('educationTitle').innerText = t.educationTitle;
   document.getElementById('educationText').innerText = t.educationText;
-  document.getElementById('contactText').innerText = t.contactText;
+  document.getElementById('contactText').innerHTML = t.contactText;
 }
 
-// Default: English
-setLanguage('en');
+// Slideshow logic
+let currentSlide = 0;
+const slides = document.getElementsByClassName("slide");
+
+function showSlide(index) {
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].classList.remove("active");
+  }
+  slides[index].classList.add("active");
+}
+
+function nextSlide() {
+  currentSlide = (currentSlide + 1) % slides.length;
+  showSlide(currentSlide);
+}
+
+function prevSlide() {
+  currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+  showSlide(currentSlide);
+}
+
+// Initialize
+document.addEventListener("DOMContentLoaded", () => {
+  setLanguage('en');
+  showSlide(currentSlide);
+});

@@ -10,36 +10,43 @@
 <body>
   <header>
     <h1 id="title">Abdullah Al-Hakimi</h1>
+    <img src="assets/me.jpg" alt="Profile Picture" class="profile-pic">
     <nav>
       <button onclick="setLanguage('en')">English</button>
       <button onclick="setLanguage('de')">Deutsch</button>
     </nav>
   </header>
 
-  <main>
-    <section>
+  <div class="slideshow-container">
+    <div class="slide" id="aboutSlide">
       <h2 id="aboutTitle">About Me</h2>
       <p id="aboutText"></p>
-    </section>
+    </div>
 
-    <section>
+    <div class="slide" id="skillsSlide">
       <h2 id="skillsTitle">Skills</h2>
       <ul id="skillsList"></ul>
-    </section>
+    </div>
 
-    <section>
+    <div class="slide" id="experienceSlide">
       <h2 id="experienceTitle">Experience</h2>
       <p id="experienceText"></p>
-    </section>
+    </div>
 
-    <section>
+    <div class="slide" id="educationSlide">
       <h2 id="educationTitle">Education</h2>
       <p id="educationText"></p>
-    </section>
-  </main>
+    </div>
 
-  <footer>
-    <p id="contactText"></p>
-  </footer>
+    <div class="slide" id="contactSlide">
+      <h2>Contact</h2>
+      <p id="contactText"></p>
+    </div>
+  </div>
+
+  <div class="nav-buttons">
+    <button onclick="prevSlide()">⬅ Prev</button>
+    <button onclick="nextSlide()">Next ➡</button>
+  </div>
 </body>
 </html>
