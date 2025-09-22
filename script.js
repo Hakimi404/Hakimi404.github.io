@@ -1,8 +1,8 @@
-// Text content (EN/DE)
+// Translations
 const translations = {
   en: {
     aboutTitle: "About Me",
-    aboutText: `I am currently pursuing a degree in "Technische Informatik" (Technical Computer Science) at HAW Hamburg. I am passionate about Machine Learning and Artificial Intelligence, and eager to explore their potential in transforming industries.
+    aboutText: `I am currently pursuing a degree in "Technische Informatik" at HAW Hamburg. I am passionate about Machine Learning and Artificial Intelligence and eager to explore their potential in transforming industries.
 
 I have built a strong foundation in programming, algorithms, and data structures. My interests include neural networks, deep learning, and automation. Beyond academics, I stay updated on tech trends, participate in coding competitions, and collaborate on AI-driven projects.`,
     skillsTitle: "Skills",
@@ -22,9 +22,15 @@ I have built a strong foundation in programming, algorithms, and data structures
     experienceText: "Currently working in IT Management, where I handle daily IT tasks and continuously learn new things. Since the tasks vary from day to day, I am constantly expanding my knowledge and practical IT skills.",
     projectsTitle: "Projects",
     projectsList: [
-      { title: "Power BI IT Dashboard", desc: "Data visualization for IT monitoring and ticket evaluation.", link: "https://github.com/hakimi404/powerbi-it-dashboard" },
-      { title: "Networking Lab (IPv6 Client-Server)", desc: "TCP client-server application with IPv4 & IPv6 support.", link: "https://github.com/hakimi404/networking-lab-ipv6" },
-      { title: "Power Apps Contact Manager", desc: "Three-screen app to manage contacts with PowerApps.", link: "https://github.com/hakimi404/powerapps-contact-manager" }
+      { title: "Networking Projects" },
+      { title: "Image Processing Projects" },
+      { title: "Java Building Projects" },
+      { title: "Intelligent Sensors Projects" },
+      { title: "Databases (SQL & Python)" },
+      { title: "Data Science & NLP Projects" },
+      { title: "Power BI" },
+      { title: "Power Automate" },
+      { title: "Power Apps" }
     ],
     educationTitle: "Education",
     educationText: "Bachelor of Science in Technische Informatik, HAW Hamburg",
@@ -52,9 +58,15 @@ Ich habe ein solides Fundament in Programmierung, Algorithmen und Datenstrukture
     experienceText: "Zurzeit arbeite ich im IT-Management, wo ich tägliche IT-Aufgaben übernehme und ständig Neues lerne. Da die Aufgaben variieren, erweitere ich kontinuierlich mein Wissen und meine praktischen IT-Fähigkeiten.",
     projectsTitle: "Projekte",
     projectsList: [
-      { title: "Power BI IT-Dashboard", desc: "Datenvisualisierung für IT-Monitoring und Ticket-Auswertung.", link: "https://github.com/hakimi404/powerbi-it-dashboard" },
-      { title: "Netzwerklabor (IPv6 Client-Server)", desc: "TCP-Client-Server-Anwendung mit IPv4 & IPv6.", link: "https://github.com/hakimi404/networking-lab-ipv6" },
-      { title: "Power Apps Kontaktmanager", desc: "Dreischirm-App zur Verwaltung von Kontakten mit PowerApps.", link: "https://github.com/hakimi404/powerapps-contact-manager" }
+      { title: "Netzwerkprojekte" },
+      { title: "Bildverarbeitungsprojekte" },
+      { title: "Java-Projekte" },
+      { title: "Intelligente Sensorprojekte" },
+      { title: "Datenbanken (SQL & Python)" },
+      { title: "Data Science & NLP Projekte" },
+      { title: "Power BI" },
+      { title: "Power Automate" },
+      { title: "Power Apps" }
     ],
     educationTitle: "Ausbildung",
     educationText: "Bachelorstudium Technische Informatik, HAW Hamburg",
@@ -90,7 +102,7 @@ function setLanguage(lang) {
   t.projectsList.forEach(p => {
     let div = document.createElement("div");
     div.className = "project-card";
-    div.innerHTML = `<h3>${p.title}</h3><p>${p.desc}</p><a href="${p.link}" target="_blank">View on GitHub</a>`;
+    div.innerHTML = `<h3>${p.title}</h3>`;
     projectsGrid.appendChild(div);
   });
 
