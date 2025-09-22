@@ -1,102 +1,115 @@
+// Text content (EN/DE)
 const translations = {
   en: {
     aboutTitle: "About Me",
-    aboutText: `I am currently pursuing a degree in "Technische Informatik" (Technical Computer Science) at HAW Hamburg, where I am delving into the fascinating world of technology and computer systems. With a keen interest in machine learning and artificial intelligence (AI), I am passionate about exploring the endless possibilities that these fields offer in revolutionizing various industries.
+    aboutText: `I am currently pursuing a degree in "Technische Informatik" (Technical Computer Science) at HAW Hamburg. I am passionate about Machine Learning and Artificial Intelligence, and eager to explore their potential in transforming industries.
 
-Throughout my academic journey, I have gained a solid foundation in computer science principles, including programming, algorithms, and data structures. Additionally, I am actively honing my skills in machine learning algorithms, neural networks, and deep learning techniques.
-
-Driven by a desire to contribute to the advancement of AI technology, I am eager to leverage my knowledge and expertise to tackle complex problems and drive innovation in the field.
-
-Outside of my academic pursuits, I enjoy staying updated on the latest developments in technology, participating in coding competitions, and collaborating on projects that push the boundaries of AI. I am also open to networking opportunities and discussions with professionals in the field to broaden my horizons and exchange ideas.`,
+I have built a strong foundation in programming, algorithms, and data structures. My interests include neural networks, deep learning, and automation. Beyond academics, I stay updated on tech trends, participate in coding competitions, and collaborate on AI-driven projects.`,
     skillsTitle: "Skills",
     skillsList: [
-      "Operating Systems",
-      "Python, Java",
-      "Image Processing, Sensors",
-      "Computer Networking",
-      "SQL & NoSQL",
-      "Algorithms & Data Structures",
-      "Microsoft Power Automate, Power BI",
-      "AWS, MATLAB"
+      { icon: "fa-brands fa-python", text: "Python" },
+      { icon: "fa-brands fa-java", text: "Java" },
+      { icon: "fa-solid fa-database", text: "SQL & NoSQL" },
+      { icon: "fa-solid fa-network-wired", text: "Computer Networking" },
+      { icon: "fa-solid fa-cogs", text: "Operating Systems" },
+      { icon: "fa-solid fa-project-diagram", text: "Algorithms & Data Structures" },
+      { icon: "fa-solid fa-chart-line", text: "Power BI & Power Automate" },
+      { icon: "fa-brands fa-aws", text: "AWS" },
+      { icon: "fa-solid fa-microchip", text: "Sensors & Image Processing" },
+      { icon: "fa-solid fa-calculator", text: "MATLAB" }
     ],
     experienceTitle: "Experience",
-    experienceText: "Currently working on IT spare parts app, Power BI dashboards for IT monitoring, automation with Power Automate (ServiceNow → Power BI), networking lab projects (IPv4/IPv6), and process documentation templates.",
+    experienceText: "Currently working in IT Management, where I handle daily IT tasks and continuously learn new things. Since the tasks vary from day to day, I am constantly expanding my knowledge and practical IT skills.",
+    projectsTitle: "Projects",
+    projectsList: [
+      { title: "Power BI IT Dashboard", desc: "Data visualization for IT monitoring and ticket evaluation.", link: "https://github.com/hakimi404/powerbi-it-dashboard" },
+      { title: "Networking Lab (IPv6 Client-Server)", desc: "TCP client-server application with IPv4 & IPv6 support.", link: "https://github.com/hakimi404/networking-lab-ipv6" },
+      { title: "Power Apps Contact Manager", desc: "Three-screen app to manage contacts with PowerApps.", link: "https://github.com/hakimi404/powerapps-contact-manager" }
+    ],
     educationTitle: "Education",
     educationText: "Bachelor of Science in Technische Informatik, HAW Hamburg",
-    contactText: `📧 <a href='mailto:alhakimi.abdullah123@gmail.com'>alhakimi.abdullah123@gmail.com</a> | 🔗 <a href='https://www.linkedin.com/in/abdullah-al-hakimi-848347259/' target='_blank'>LinkedIn</a>`
+    contactText: `📧 <a href="mailto:alhakimi.abdullah123@gmail.com">alhakimi.abdullah123@gmail.com</a> | 🔗 <a href="https://www.linkedin.com/in/abdullah-al-hakimi-848347259/" target="_blank">LinkedIn</a>`
   },
   de: {
     aboutTitle: "Über mich",
-    aboutText: `Ich studiere derzeit "Technische Informatik" an der HAW Hamburg und tauche in die faszinierende Welt der Technologie und Computersysteme ein. Mein besonderes Interesse gilt dem Bereich Machine Learning und Künstliche Intelligenz (KI), deren Möglichkeiten zahlreiche Branchen revolutionieren können.
+    aboutText: `Ich studiere derzeit "Technische Informatik" an der HAW Hamburg. Besonders interessieren mich Maschinelles Lernen und Künstliche Intelligenz, und ich möchte deren Potenzial zur Transformation von Branchen erforschen.
 
-Während meines Studiums habe ich ein solides Fundament in Informatikprinzipien wie Programmierung, Algorithmen und Datenstrukturen aufgebaut. Zudem vertiefe ich meine Kenntnisse in maschinellen Lernverfahren, neuronalen Netzen und Deep Learning.
-
-Getrieben vom Wunsch, zur Weiterentwicklung der KI-Technologie beizutragen, möchte ich mein Wissen einsetzen, um komplexe Probleme zu lösen und Innovationen voranzutreiben.
-
-Abseits des Studiums informiere ich mich über aktuelle technologische Entwicklungen, nehme an Programmierwettbewerben teil und arbeite an Projekten, die die Grenzen der KI erweitern. Außerdem freue ich mich auf Networking-Möglichkeiten und den Austausch mit Fachleuten.`,
+Ich habe ein solides Fundament in Programmierung, Algorithmen und Datenstrukturen aufgebaut. Meine Interessen umfassen neuronale Netze, Deep Learning und Automatisierung. Neben dem Studium informiere ich mich über aktuelle Technologietrends, nehme an Programmierwettbewerben teil und arbeite an KI-Projekten.`,
     skillsTitle: "Fähigkeiten",
     skillsList: [
-      "Betriebssysteme",
-      "Python, Java",
-      "Bildverarbeitung, Sensoren",
-      "Rechnernetze",
-      "SQL & NoSQL",
-      "Algorithmen & Datenstrukturen",
-      "Microsoft Power Automate, Power BI",
-      "AWS, MATLAB"
+      { icon: "fa-brands fa-python", text: "Python" },
+      { icon: "fa-brands fa-java", text: "Java" },
+      { icon: "fa-solid fa-database", text: "SQL & NoSQL" },
+      { icon: "fa-solid fa-network-wired", text: "Rechnernetze" },
+      { icon: "fa-solid fa-cogs", text: "Betriebssysteme" },
+      { icon: "fa-solid fa-project-diagram", text: "Algorithmen & Datenstrukturen" },
+      { icon: "fa-solid fa-chart-line", text: "Power BI & Power Automate" },
+      { icon: "fa-brands fa-aws", text: "AWS" },
+      { icon: "fa-solid fa-microchip", text: "Sensoren & Bildverarbeitung" },
+      { icon: "fa-solid fa-calculator", text: "MATLAB" }
     ],
     experienceTitle: "Erfahrung",
-    experienceText: "Zurzeit arbeite ich an einer IT-Ersatzteil-App, Power-BI-Dashboards für IT-Monitoring, Automatisierungen mit Power Automate (ServiceNow → Power BI), Netzwerklabor-Projekten (IPv4/IPv6) und Prozessdokumentations-Templates.",
+    experienceText: "Zurzeit arbeite ich im IT-Management, wo ich tägliche IT-Aufgaben übernehme und ständig Neues lerne. Da die Aufgaben variieren, erweitere ich kontinuierlich mein Wissen und meine praktischen IT-Fähigkeiten.",
+    projectsTitle: "Projekte",
+    projectsList: [
+      { title: "Power BI IT-Dashboard", desc: "Datenvisualisierung für IT-Monitoring und Ticket-Auswertung.", link: "https://github.com/hakimi404/powerbi-it-dashboard" },
+      { title: "Netzwerklabor (IPv6 Client-Server)", desc: "TCP-Client-Server-Anwendung mit IPv4 & IPv6.", link: "https://github.com/hakimi404/networking-lab-ipv6" },
+      { title: "Power Apps Kontaktmanager", desc: "Dreischirm-App zur Verwaltung von Kontakten mit PowerApps.", link: "https://github.com/hakimi404/powerapps-contact-manager" }
+    ],
     educationTitle: "Ausbildung",
     educationText: "Bachelorstudium Technische Informatik, HAW Hamburg",
-    contactText: `📧 <a href='mailto:alhakimi.abdullah123@gmail.com'>alhakimi.abdullah123@gmail.com</a> | 🔗 <a href='https://www.linkedin.com/in/abdullah-al-hakimi-848347259/' target='_blank'>LinkedIn</a>`
+    contactText: `📧 <a href="mailto:alhakimi.abdullah123@gmail.com">alhakimi.abdullah123@gmail.com</a> | 🔗 <a href="https://www.linkedin.com/in/abdullah-al-hakimi-848347259/" target="_blank">LinkedIn</a>`
   }
 };
 
+// Apply translations
 function setLanguage(lang) {
   const t = translations[lang];
-  document.getElementById('aboutTitle').innerText = t.aboutTitle;
-  document.getElementById('aboutText').innerText = t.aboutText;
-  document.getElementById('skillsTitle').innerText = t.skillsTitle;
+  document.getElementById("aboutTitle").innerText = t.aboutTitle;
+  document.getElementById("aboutText").innerText = t.aboutText;
+  document.getElementById("skillsTitle").innerText = t.skillsTitle;
 
-  const skillsList = document.getElementById('skillsList');
-  skillsList.innerHTML = "";
+  // Skills
+  const skillsGrid = document.getElementById("skillsGrid");
+  skillsGrid.innerHTML = "";
   t.skillsList.forEach(skill => {
-    let li = document.createElement("li");
-    li.innerText = skill;
-    skillsList.appendChild(li);
+    let div = document.createElement("div");
+    div.className = "skill-card";
+    div.innerHTML = `<i class="${skill.icon}"></i><p>${skill.text}</p>`;
+    skillsGrid.appendChild(div);
   });
 
-  document.getElementById('experienceTitle').innerText = t.experienceTitle;
-  document.getElementById('experienceText').innerText = t.experienceText;
-  document.getElementById('educationTitle').innerText = t.educationTitle;
-  document.getElementById('educationText').innerText = t.educationText;
-  document.getElementById('contactText').innerHTML = t.contactText;
+  // Experience
+  document.getElementById("experienceTitle").innerText = t.experienceTitle;
+  document.getElementById("experienceText").innerText = t.experienceText;
+
+  // Projects
+  document.getElementById("projectsTitle").innerText = t.projectsTitle;
+  const projectsGrid = document.getElementById("projectsGrid");
+  projectsGrid.innerHTML = "";
+  t.projectsList.forEach(p => {
+    let div = document.createElement("div");
+    div.className = "project-card";
+    div.innerHTML = `<h3>${p.title}</h3><p>${p.desc}</p><a href="${p.link}" target="_blank">View on GitHub</a>`;
+    projectsGrid.appendChild(div);
+  });
+
+  // Education
+  document.getElementById("educationTitle").innerText = t.educationTitle;
+  document.getElementById("educationText").innerText = t.educationText;
+
+  // Contact
+  document.getElementById("contactText").innerHTML = t.contactText;
 }
 
-// Slideshow logic
-let currentSlide = 0;
-const slides = document.getElementsByClassName("slide");
+// Fade-in animation
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) entry.target.classList.add("visible");
+  });
+}, { threshold: 0.2 });
 
-function showSlide(index) {
-  for (let i = 0; i < slides.length; i++) {
-    slides[i].classList.remove("active");
-  }
-  slides[index].classList.add("active");
-}
+document.querySelectorAll(".fade-in").forEach(el => observer.observe(el));
 
-function nextSlide() {
-  currentSlide = (currentSlide + 1) % slides.length;
-  showSlide(currentSlide);
-}
-
-function prevSlide() {
-  currentSlide = (currentSlide - 1 + slides.length) % slides.length;
-  showSlide(currentSlide);
-}
-
-// Initialize
-document.addEventListener("DOMContentLoaded", () => {
-  setLanguage('en');
-  showSlide(currentSlide);
-});
+// Default language
+document.addEventListener("DOMContentLoaded", () => setLanguage("en"));
